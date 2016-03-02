@@ -1,1 +1,5 @@
-spring boot
+This is a repo to use as a quickstart to start working with Spring Boot and deploying to the WildFly application server.  This uses the mvn build system and creates a .war file that can be deployed.  The code also contains a sample REST listening at /hello.
+
+As an added bonus, this repo can also be deployed directly as a docker container using the WildFly container with the following command:
+
+	oc new-app wildfly:10.0~https://github.com/gshipley/bootwildfly.git
