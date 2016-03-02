@@ -3,3 +3,6 @@ This is a repo to use as a quickstart to start working with Spring Boot and depl
 As an added bonus, this repo can also be deployed directly as a docker container using the WildFly S2I builder image on OpenShift 3 with the following command:
 
 	oc new-app wildfly:10.0~https://github.com/gshipley/bootwildfly.git
+
+
+What, you don't have OpenShift 3 yet? Fix that immediately: www.openshift.org/vm
