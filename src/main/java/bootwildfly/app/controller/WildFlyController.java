@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class WildFlyController {
 
-	@GetMapping("/slash")
+	@GetMapping("/")
 	public String sayHello() {
 		return "slash";
 	}
