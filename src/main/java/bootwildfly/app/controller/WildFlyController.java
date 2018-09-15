@@ -28,7 +28,7 @@ public class WildFlyController {
 		AppUser au = new AppUser();
 		au.setName("ia");
 
-		AUR.save(au);
+		// AUR.save(au);
 
 		return "slash";
 	}
