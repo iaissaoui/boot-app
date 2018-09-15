@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @ControllerAdvice
 class GlobalDefaultExceptionHandler {
-	public static final String DEFAULT_ERROR_VIEW = "error";
+	public static final String DEFAULT_ERROR_VIEW = "exceptionhandler";
 
 	@ExceptionHandler(value = Exception.class)
 	public ModelAndView defaultErrorHandler(HttpServletRequest req, Exception e) throws Exception {
