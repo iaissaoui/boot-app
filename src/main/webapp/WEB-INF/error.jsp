@@ -14,9 +14,17 @@
 <h2>${Error}</h2>
 <h2>${Message}</h2>
 <h2>${Exception}</h2>
-
 <h2>${url}</h2>
 <h2>${exception}</h2>
+
+
+<h2>Attributes:</h2>
+
+    <c:forEach items="${requestScope}" var="par">
+        <c:if test="${par.key.indexOf('attrName_') > -1}">
+            <li>${par.key} - ${par.value}</li>
+        </c:if>
+    </c:forEach>
 
 
 </body>
