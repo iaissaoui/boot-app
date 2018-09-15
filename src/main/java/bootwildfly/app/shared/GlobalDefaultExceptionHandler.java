@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
-@ControllerAdvice
+@ControllerAdvice(basePackages = { "bootwildfly.app.controller" })
 class GlobalDefaultExceptionHandler {
 	public static final String DEFAULT_ERROR_VIEW = "exceptionhandler";
 
