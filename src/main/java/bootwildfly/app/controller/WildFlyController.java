@@ -10,9 +10,12 @@ public class WildFlyController {
 
 	@Value("${spring.application.name}")
 	private String appName;
+	@Value("IntelliJ")
+	private String ide;
 
 	@GetMapping("/")
 	public String sayHello(Model m) {
+
 		m.addAttribute("appName", appName);
 		return "slash";
 	}
