@@ -11,6 +11,7 @@
 <body>
 
 <h1>You could have prevented this:</h1>
+<h2>${url}</h2>
 <h2>${exception}</h2>
 
 
