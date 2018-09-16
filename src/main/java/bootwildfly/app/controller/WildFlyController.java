@@ -28,9 +28,12 @@ public class WildFlyController {
 	}
 
 	@GetMapping("/slash")
-	public String landOnSlash(Model m) {
-
+	public String landOnSlash(Model m) throws Exception {
 		m.addAttribute("appName", appName);
+
+		Integer i = null;
+		Integer j = i + 1;
+
 		return "slash";
 	}
 }
