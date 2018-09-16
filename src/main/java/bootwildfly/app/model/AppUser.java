@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 //@Entity
+
 public @Data @AllArgsConstructor @NoArgsConstructor class AppUser {
 
 //	@Id
