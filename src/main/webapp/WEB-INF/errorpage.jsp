@@ -10,8 +10,8 @@
 </head>
 <body>
 	<h1>You could have prevented this</h1>
-	<h2><c:out value="${param}"></c:out>  </h2>
-	<h2>${param}</h2>
+
+	<h2>${myparam}</h2>
 	<h2>${exception}</h2>
 	<h2>${url}</h2>
 </body>

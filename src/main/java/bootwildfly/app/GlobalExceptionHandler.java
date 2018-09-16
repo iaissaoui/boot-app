@@ -21,7 +21,7 @@ public class GlobalExceptionHandler {
 //		mav.addObject("url", req.getRequestURL());
 //		mav.setViewName(DEFAULT_ERROR_VIEW);
 
-		m.addAttribute("param", "GlobalExceptionHandler");
+		m.addAttribute("myparam", "GlobalExceptionHandler");
 		m.addAttribute("exception", ExceptionUtils.getStackTrace(e));
 		m.addAttribute("url", req.getRequestURL());
 
