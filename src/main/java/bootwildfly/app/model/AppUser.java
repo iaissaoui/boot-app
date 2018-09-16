@@ -1,12 +1,10 @@
 package bootwildfly.app.model;
 
-import javax.persistence.Entity;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
+//@Entity
 public @Data @AllArgsConstructor @NoArgsConstructor class AppUser {
 
 //	@Id
