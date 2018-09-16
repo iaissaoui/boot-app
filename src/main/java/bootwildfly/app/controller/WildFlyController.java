@@ -17,7 +17,10 @@ public class WildFlyController {
 	@GetMapping("/")
 	public String landOnRoot(Model m) {
 
+		String cwd = System.getProperty("user.dir");
+
 		m.addAttribute("appName", appName);
+		m.addAttribute("cwd", cwd);
 
 //		AppUser au = new AppUser();
 //		au.setName("ia");

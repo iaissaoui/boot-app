@@ -10,7 +10,9 @@
 <title>JSP 101</title>
 </head>
 <body>
-<h1>JSP 101</h1>
-<h2>spring.application.name=${appName} </h2>
+<h1>Spring Boot 2.x on WildFly</h1>
+<h2>Application name: ${appName} </h2>
+<h2>Current working directory: ${cwd} </h2>
+
 </body>
 </html>
