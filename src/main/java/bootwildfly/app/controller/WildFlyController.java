@@ -15,7 +15,7 @@ public class WildFlyController {
 //	AppUserRepo AUR;
 
 	@GetMapping("/")
-	public String sayHello(Model m) {
+	public String landOnRoot(Model m) {
 
 		m.addAttribute("appName", appName);
 
@@ -24,6 +24,13 @@ public class WildFlyController {
 //
 //		AUR.save(au);
 
+		return "slash";
+	}
+
+	@GetMapping("/slash")
+	public String landOnSlash(Model m) {
+
+		m.addAttribute("appName", appName);
 		return "slash";
 	}
 }
