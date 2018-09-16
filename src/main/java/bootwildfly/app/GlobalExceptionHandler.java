@@ -2,6 +2,7 @@ package bootwildfly.app;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -20,8 +21,8 @@ public class GlobalExceptionHandler {
 //		mav.addObject("url", req.getRequestURL());
 //		mav.setViewName(DEFAULT_ERROR_VIEW);
 
-		m.addAttribute("param", "using model");
-		m.addAttribute("exception", e);
+		m.addAttribute("param", "GlobalExceptionHandler");
+		m.addAttribute("exception", ExceptionUtils.getStackTrace(e));
 		m.addAttribute("url", req.getRequestURL());
 
 		return DEFAULT_ERROR_VIEW;
