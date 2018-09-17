@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public @Data @AllArgsConstructor @NoArgsConstructor class AppUser {
 
 	@Id
-	private Long id;
+	private String id;
 	@Column(nullable = false)
 	private String name;
 
