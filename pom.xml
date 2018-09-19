@@ -44,11 +44,19 @@
 			<optional>true</optional>
 		</dependency>
 
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.4-1206-jdbc42</version>
-		</dependency>
+        <!-- Use MySQL Connector-J -->
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.postgresql</groupId> -->
+<!-- 			<artifactId>postgresql</artifactId> -->
+<!-- 			<version>9.4-1206-jdbc42</version> -->
+<!-- 		</dependency> -->
+		
 		<!-- H2 Database -->
 		<!-- <dependency> -->
 		<!-- <groupId>com.h2database</groupId> -->
