@@ -6,21 +6,21 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "appuser")
+@Table(name = "appuser20180920")
 //@Data @AllArgsConstructor @NoArgsConstructor
 public class AppUser {
 
 	@Id
-	private String id;
+	private String appuserid;
 	@Column(nullable = false)
 	private String name;
 
-	public String getId() {
-		return id;
+	public String getAppuserid() {
+		return appuserid;
 	}
 
-	public void setId(String id) {
-		this.id = id;
+	public void setAppuserid(String appuserid) {
+		this.appuserid = appuserid;
 	}
 
 	public String getName() {
@@ -31,9 +31,9 @@ public class AppUser {
 		this.name = name;
 	}
 
-	public AppUser(String id, String name) {
+	public AppUser(String appuserid, String name) {
 		super();
-		this.id = id;
+		this.appuserid = appuserid;
 		this.name = name;
 	}
 
