@@ -5,17 +5,40 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 @Entity
 @Table(name = "appuser")
-public @Data @AllArgsConstructor @NoArgsConstructor class AppUser {
+//@Data @AllArgsConstructor @NoArgsConstructor
+public class AppUser {
 
 	@Id
 	private String id;
 	@Column(nullable = false)
 	private String name;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public AppUser(String id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	public AppUser() {
+
+	}
 
 }
