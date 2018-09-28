@@ -1,13 +1,20 @@
 package bootwildfly.app.model;
 
-//@Entity
-//@Table(name = "appuser20180920")
-//@Data @AllArgsConstructor @NoArgsConstructor
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "appuser01")
+//@Data
+//@AllArgsConstructor
+//@NoArgsConstructor
 public class AppUser {
 
-//	@Id
+	@Id
 	private String appuserid;
-//	@Column(nullable = false)
+	@Column(nullable = false)
 	private String name;
 
 	public String getAppuserid() {
