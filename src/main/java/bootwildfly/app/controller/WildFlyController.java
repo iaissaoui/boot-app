@@ -28,11 +28,7 @@ public class WildFlyController {
 		m.addAttribute("appName", appName);
 		m.addAttribute("cwd", cwd);
 
-		AppUser au = new AppUser();
-		au.setName("iq-"+UUID.randomUUID());
-		au.setAppuserid("ai");
 
-		AUR.save(au);
 
 		return "slash";
 	}
@@ -46,4 +42,18 @@ public class WildFlyController {
 
 		return "slash";
 	}
+	 
+	
+	@GetMapping("/add")
+	public String add(Model m) throws Exception {
+		  
+		m.addAttribute("appName", appName);
+		AppUser au = new AppUser();
+		au.setName("iq01"); 
+		au.setAppuserid("ai01"); 
+
+		AUR.save(au); 
+
+		return "slash";
+	}	
 }
