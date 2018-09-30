@@ -44,26 +44,26 @@
 			<optional>true</optional>
 		</dependency>
 
-        <!-- Use MySQL Connector-J -->
+		<!-- Use MySQL Connector-J -->
 
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-            
-        </dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>mysql</groupId> -->
+		<!-- <artifactId>mysql-connector-java</artifactId> -->
+		<!-- <scope>runtime</scope> -->
+
+		<!-- </dependency> -->
+
+		<dependency>
+		<groupId>org.postgresql</groupId>
+		<artifactId>postgresql</artifactId>
+<!-- 		<version>9.4-1206-jdbc42</version> -->
+		</dependency>
 
 <!-- 		<dependency> -->
-<!-- 			<groupId>org.postgresql</groupId> -->
-<!-- 			<artifactId>postgresql</artifactId> -->
-<!-- 			<version>9.4-1206-jdbc42</version> -->
+<!-- 			<groupId>org.mariadb.jdbc</groupId> -->
+<!-- 			<artifactId>mariadb-java-client</artifactId> -->
 <!-- 		</dependency> -->
-		
-		<!-- H2 Database -->
-		<!-- <dependency> -->
-		<!-- <groupId>com.h2database</groupId> -->
-		<!-- <artifactId>h2</artifactId> -->
-		<!-- </dependency> -->
+
 
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 		<dependency>

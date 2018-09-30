@@ -1,5 +1,7 @@
 package bootwildfly.app.controller;
 
+import java.util.UUID;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -27,7 +29,7 @@ public class WildFlyController {
 		m.addAttribute("cwd", cwd);
 
 		AppUser au = new AppUser();
-		au.setName("iq");
+		au.setName("iq-"+UUID.randomUUID());
 		au.setAppuserid("ai");
 
 		AUR.save(au);
