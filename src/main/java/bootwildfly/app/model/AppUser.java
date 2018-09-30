@@ -12,9 +12,9 @@ import javax.persistence.Table;
 //@NoArgsConstructor
 public class AppUser {
 
-	@Id
+//	@Id
 	private String appuserid;
-	@Column(nullable = false)
+//	@Column(nullable = false)
 	private String name;
  
 	public String getAppuserid() {
