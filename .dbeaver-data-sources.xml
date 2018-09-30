@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="postgres-jdbc-1662abd0774-6d733515756fdf8c" provider="postgresql" driver="postgres-jdbc" name="PostgreSQL - d3cus5dabsq2je" save-password="true" show-system-objects="true" show-util-objects="true" read-only="false">
+		<connection host="ec2-174-129-18-98.compute-1.amazonaws.com" port="5432" server="" database="d3cus5dabsq2je" url="jdbc:postgresql://ec2-174-129-18-98.compute-1.amazonaws.com:5432/d3cus5dabsq2je" user="otkcsfmwskjyyr" password="ElwFc0IXFBJSE1drRRREBSJBBBYXF0IidCUUXhVcAF4RVgAGBVQWED8rHlYERlNUchBBQkUBFlI9QBBADiVHUyWl" type="dev">
+			<property name="connectTimeout" value="20"/>
+			<property name="loginTimeout" value="20"/>
+			<provider-property name="@dbeaver-show-non-default-db@" value="true"/>
+			<provider-property name="@dbeaver-show-template-db@" value="false"/>
+			<network-handler type="TUNNEL" id="ssh_tunnel" enabled="false" save-password="true">
+				<property name="sshConnectTimeout" value="10000"/>
+				<property name="port" value="22"/>
+				<property name="implementation" value="jsch"/>
+				<property name="authType" value="PASSWORD"/>
+			</network-handler>
+			<network-handler type="PROXY" id="socks_proxy" enabled="false" save-password="true">
+				<property name="socks-port" value="1080"/>
+			</network-handler>
+			<network-handler type="CONFIG" id="postgre_ssl" enabled="true" save-password="true">
+				<property name="sslMode" value="require"/>
+			</network-handler>
+		</connection>
+	</data-source>
+	<filters/>
+</data-sources>
