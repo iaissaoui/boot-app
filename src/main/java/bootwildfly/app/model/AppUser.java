@@ -5,8 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "appuser01")
+//@Entity
+//@Table(name = "appuser01")
 //@Data
 //@AllArgsConstructor
 //@NoArgsConstructor

@@ -17,8 +17,8 @@ public class WildFlyController {
 	@Value("${spring.application.name}")
 	private String appName;
 
-	@Autowired
-	AppUserRepo AUR;
+//	@Autowired
+//	AppUserRepo AUR;
 
 	@GetMapping("/")
 	public String landOnRoot(Model m) {
@@ -33,7 +33,7 @@ public class WildFlyController {
 		return "slash";
 	}
 
-	@GetMapping("/slash")
+	@GetMapping("/ex")
 	public String landOnSlash(Model m) throws Exception {
 		m.addAttribute("appName", appName);
 
@@ -47,12 +47,12 @@ public class WildFlyController {
 	@GetMapping("/add")
 	public String add(Model m) throws Exception {
 		  
-		m.addAttribute("appName", appName);
-		AppUser au = new AppUser();
-		au.setName("iq01"); 
-		au.setAppuserid("ai01"); 
-
-		AUR.save(au); 
+//		m.addAttribute("appName", appName);
+//		AppUser au = new AppUser();
+//		au.setName("iq01"); 
+//		au.setAppuserid("ai01"); 
+//
+//		AUR.save(au); 
 
 		return "slash";
 	}	
