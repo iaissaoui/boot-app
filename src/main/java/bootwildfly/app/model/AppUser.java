@@ -5,9 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 @Entity
-@Table(name = "appuser01")
+@Table(name = "s_appuser")
 //@Data
 //@AllArgsConstructor
 //@NoArgsConstructor
@@ -17,7 +16,6 @@ public class AppUser {
 	private Long id;
 	@Column(nullable = false)
 	private String name;
- 
 
 	public Long getId() {
 		return id;
