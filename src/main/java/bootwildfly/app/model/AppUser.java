@@ -5,24 +5,26 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-//@Entity
-//@Table(name = "appuser01")
+
+@Entity
+@Table(name = "appuser01")
 //@Data
 //@AllArgsConstructor
 //@NoArgsConstructor
 public class AppUser {
 
-//	@Id
-	private String appuserid;
-//	@Column(nullable = false)
+	@Id
+	private Long id;
+	@Column(nullable = false)
 	private String name;
  
-	public String getAppuserid() {
-		return appuserid;
+
+	public Long getId() {
+		return id;
 	}
 
-	public void setAppuserid(String appuserid) {
-		this.appuserid = appuserid;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -33,9 +35,9 @@ public class AppUser {
 		this.name = name;
 	}
 
-	public AppUser(String appuserid, String name) {
+	public AppUser(Long id, String name) {
 		super();
-		this.appuserid = appuserid;
+		this.id = id;
 		this.name = name;
 	}
 

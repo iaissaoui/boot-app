@@ -7,9 +7,9 @@ import org.springframework.stereotype.Repository;
 
 import bootwildfly.app.model.AppUser;
 
-//@Repository
+@Repository
 public interface AppUserRepo 
-//extends JpaRepository<AppUser, Long> 
+extends JpaRepository<AppUser, Long> 
 {
 
 	List<AppUser> findByNameStartsWithIgnoreCase(String name);

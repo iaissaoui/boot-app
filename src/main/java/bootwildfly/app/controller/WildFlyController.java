@@ -1,7 +1,5 @@
 package bootwildfly.app.controller;
 
-import java.util.UUID;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -14,11 +12,18 @@ import bootwildfly.app.repo.AppUserRepo;
 @Controller
 public class WildFlyController {
 
+	private static Long counter;
+
+	static {
+
+		counter = 0L;
+	}
+
 	@Value("${spring.application.name}")
 	private String appName;
 
-//	@Autowired
-//	AppUserRepo AUR;
+	@Autowired
+	AppUserRepo AUR;
 
 	@GetMapping("/")
 	public String landOnRoot(Model m) {
@@ -27,8 +32,6 @@ public class WildFlyController {
 
 		m.addAttribute("appName", appName);
 		m.addAttribute("cwd", cwd);
-
-
 
 		return "slash";
 	}
@@ -42,18 +45,17 @@ public class WildFlyController {
 
 		return "slash";
 	}
-	 
-	
-	@GetMapping("/Add")
+
+	@GetMapping("/add")
 	public String add(Model m) throws Exception {
-		  
-//		m.addAttribute("appName", appName);
-//		AppUser au = new AppUser();
-//		au.setName("iq01"); 
-//		au.setAppuserid("ai01"); 
-//
-//		AUR.save(au); 
+
+		m.addAttribute("appName", appName);
+		AppUser au = new AppUser();
+		au.setName("iqbal");
+		au.setId(counter++);
+
+		AUR.save(au);
 
 		return "slash";
-	}	
+	}
 }
