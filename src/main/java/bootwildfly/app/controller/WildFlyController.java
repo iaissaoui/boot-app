@@ -34,7 +34,7 @@ public class WildFlyController {
 	}
 
 	@GetMapping("/ex")
-	public String landOnSlash(Model m) throws Exception {
+	public String landOnError(Model m) throws Exception {
 		m.addAttribute("appName", appName);
 
 		Integer i = null;
@@ -44,7 +44,7 @@ public class WildFlyController {
 	}
 	 
 	
-	@GetMapping("/add")
+	@GetMapping("/Add")
 	public String add(Model m) throws Exception {
 		  
 //		m.addAttribute("appName", appName);

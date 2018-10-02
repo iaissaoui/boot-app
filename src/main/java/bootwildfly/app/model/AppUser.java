@@ -5,16 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-//@Entity
-//@Table(name = "appuser01")
-//@Data
-//@AllArgsConstructor
-//@NoArgsConstructor
+
 public class AppUser {
 
-//	@Id
 	private String appuserid;
-//	@Column(nullable = false)
 	private String name;
  
 	public String getAppuserid() {
